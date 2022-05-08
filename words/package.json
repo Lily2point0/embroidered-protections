@@ -1,0 +1,16 @@
+{
+  "name": "words",
+  "version": "1.0.0",
+  "description": "An algorithm to generate mixed lists of words in English and Turkish based on CSV input",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node Version2/index.js",
+    "start-v1": "node Version1/index.js"
+  },
+  "author": "Lily2point0",
+  "license": "MIT",
+  "dependencies": {
+    "csv-parser": "^3.0.0"
+  }
+}

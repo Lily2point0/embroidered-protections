@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Embroidered Protection | AR Markers</title>
+	</head>
+	<style>
+		.thumbnail {
+			display: inline-block;
+			border: 1px solid black;
+			width: 200px;
+			padding: 5px;
+			height: 200px;
+			overflow: hidden;
+			margin: 5px;
+			position: relative;
+			vertical-align: middle;
+		}
+
+		.thumbnail:after {
+			content:'';
+			display: block;
+			width: 200px;
+			background-color: white;
+			height: 5px;
+			position: absolute;
+			bottom: 0;
+		}
+
+		.helper {
+		    display: inline-block;
+		    height: 100%;
+		    vertical-align: middle;
+		}
+
+		.thumbnail img {
+			vertical-align: middle;
+		}
+	</style>
+<body>
+	<h1>Choose your marker</h1>
+	<p>Click one of the images below to enlarge it, and point your mobile device in Scan Mode to see the result</p>
+	{{#each images}}
+		<a href="/images/{{this}}" class="thumbnail"><span class="helper"></span><img src="/images/{{this}}" width="200" /></a>
+	{{/each}}
+</body>
+</html>
